@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+<!-- Ejercicio 1 -->
+    <div class="contenedor">
+        <h1>Conversor binario->decimal</h1>
+        <form>
+            <label for="numero"> Ingrese un numero Binario</label>
+            <input type="text" name="numero" id="numero" />
+            <p>
+            <div onclick="procesarBinario();" class="boton">Ejecutar</div>
+        </form>
+        <br>
+        <div id="resultado"></div>
+    </div>
+    <br>
+<!-- Ejercicio 2 -->
+<div class="contenedor">
+    <h1>Analizador de direccion IP por Clase</h1>
+    <form>
+        <label for="ip">Ingrese una dirección IP</label>
+        <input type="text" name="ip" id="ip" />
+        <label for="mascara">Ingrese una dirección mascara de red</label>
+        <input type="text" name="mascara" id="mascara" />
+        <p>
+        <div onclick="procesarClaseIP();" class="boton">Ejecutar</div>
+    </form>
+    <br>
+    <div id="resultadoClaseIP"></div>
+</div>
+<br>
+<!-- Ejercicio 2 -->
+<div class="contenedor">
+    <h1>Analizador de Nombres de Dominios</h1>
+    <form>
+        <label for="dominio">Ingrese un nombre de dominio</label>
+        <input type="text" name="dominio" id="dominio" />
+        <p>
+        <div onclick="procesarDN();" class="boton">Ejecutar</div>
+    </form>
+    <br>
+    <div id="resultadoDN"></div>
+</div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
+
